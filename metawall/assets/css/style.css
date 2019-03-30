@@ -1,0 +1,145 @@
+/*@import url("https://fonts.googleapis.com/css?family=Poppins:400,800");
+<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+*/
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700|IBM+Plex+Serif:400i|Monoton");
+
+* {
+
+  margin: 0;
+  padding: 0;
+  letter-spacing: .05rem; }
+
+
+body {
+background-color:#000000;
+
+}
+/* demo container and row */
+.container {
+  max-width: 1200px;
+  margin: auto; }
+  .container .row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: 50px 0; }
+    .container .row .col {
+      flex-grow: 1;
+      margin: 10px; }
+    @media screen and (max-width: 1000px) {
+      .container .row {
+        flex-wrap: wrap; }
+        .container .row .col {
+          margin: 10px;
+          width: calc(50% - 20px);
+           } }
+    @media screen and (max-width: 560px) {
+      .container .row {
+        flex-wrap: wrap; }
+        .container .row .col {
+          margin: 10px;
+          width: calc(100% - 20px); } }
+
+/* Profile card style */
+.profile-card {
+  position: relative;
+  background: #000000;
+  color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+  border-radius: 3px;
+  overflow: visible;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+  .profile-card .profile-card__img {
+    opacity: .5;
+    width: 100%;
+    margin-bottom: -7px;
+    filter: grayscale(100%);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s; }
+  .profile-card .profile-card__overlay {
+    position: absolute;
+    left: 10%;
+    top: 2%;
+    width: 80%;
+    height: 96%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box; }
+  .profile-card .profile-card__infos {
+    transform: translateY(50%);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s; }
+    .profile-card .profile-card__infos .profile-card__title {
+    font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 1.7rem;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s; }
+    .profile-card .profile-card__infos .profile-card__subtitle {
+    font-family: 'IBM Plex Serif', serif;
+      font-weight: 400;
+      font-size: 0.9rem;
+     font-style: italic;
+      margin-top: 0rem;
+      opacity: .8;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s; }
+  .profile-card .profile-card__socials {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    transform: translateY(-30%);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s; }
+    .profile-card .profile-card__socials .profile-card__link {
+      text-decoration: none;
+      color: #eee;
+      font-weight: 400;
+      font-size: .7rem; }
+      .profile-card .profile-card__socials .profile-card__link i {
+        display: block;
+        font-size: 1.6rem;
+        margin-bottom: .3rem; }
+      .profile-card .profile-card__socials .profile-card__link:hover {
+        opacity: .7; }
+  .profile-card .profile-card__click {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .profile-card:hover {
+    background: black; }
+    .profile-card:hover .profile-card__infos .profile-card__title {
+      font-size: 1.2rem; }
+    .profile-card:hover .profile-card__infos .profile-card__subtitle {
+      font-size: .7rem;
+      margin-top: 0; }
+    .profile-card:hover .profile-card__socials {
+      transform: translateY(0) scale(1); }
+    .profile-card:hover .profile-card__img {
+      filter: grayscale(0);
+      opacity: 1; }
